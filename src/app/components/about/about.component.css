@@ -1,0 +1,65 @@
+.div-container{
+   
+}
+
+.upper-container {
+    height: 100%;
+}
+
+h2, .h2{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+h4, .h4 {
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.p-desktop {
+    font-size: 20px;
+}
+
+.item {
+    padding: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 100%;
+    border: 5px dotted black;
+}
+
+.vertical-center {
+    margin: 20px;
+    height: 80vh;
+    width: 100%;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+    
+}
+.text-container{
+    margin: 20px;
+}
+.container {
+    margin: 10px;
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-mobile {
+    width: 90%;
+}
+
+@media only screen and (max-width: 600px){
+    .item {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    h4, .h4 {
+        font-weight: 900;
+        font-size: 20px;
+    }
+}

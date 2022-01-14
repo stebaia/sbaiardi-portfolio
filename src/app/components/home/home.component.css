@@ -1,0 +1,165 @@
+.div-container {
+    background:  url(/assets/image/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1080px;
+}
+.vertical-center {
+    width: 100%;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
+.div-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-profile {
+    width: auto;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    background: linear-gradient(-45deg, #d1cac7, #a5b6c7, #6fadc7, #dcb4ee);
+    overflow: hidden;
+    background-size: 400% 400%;
+    animation: gradient-bg 15s ease infinite;
+
+}
+ section .wave
+ {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100px;
+     background: url(/assets/image/wave.png);
+     background-size: 1200px 100px;
+     
+ }
+
+@keyframes gradient-bg
+{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+}
+
+
+section .wave.water
+{
+   animation: animate 25s linear infinite;
+   z-index:1000;
+   opacity:1;
+   animation-delay: 0s;
+   bottom:0;
+
+}
+
+section .wave.water:nth-child(2)
+{
+   animation: animate2 15s linear infinite;
+   z-index:999;
+   opacity:0.5;
+   animation-delay: -5s;
+   bottom:10px;
+
+}
+section .wave.water:nth-child(3)
+{
+   animation: animate 30s cubic-bezier(.55, .5,.45,.5) infinite;
+   z-index:998;
+   opacity:0.2;
+   animation-delay: -5s;
+   bottom:15px;
+
+}
+section .wave.water:nth-child(4)
+{
+   animation: animate2 5s linear infinite;
+   z-index:997;
+   opacity:0.7;
+   animation-delay: -5s;
+   bottom:20px;
+
+}
+
+
+
+
+
+@keyframes animate
+{
+   0%{
+       background-position-x: 0;
+   }
+   100%{
+       background-position-x: 1000px;
+   }
+}
+@keyframes animate2
+{
+   0%{
+       background-position-x: 0;
+   }
+   100%{
+       background-position-x: -1000px;
+   }
+}
+
+.typewriter h3.desktop, h1.desktop {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+     /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2.5s steps(50, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    40% { border-color: transparent; }
+  }
+
+h1, .h1 {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 600px){
+    .img-profile{
+        display: flex;
+        justify-content: center;
+    }
+    .div-title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+       
+    
+}

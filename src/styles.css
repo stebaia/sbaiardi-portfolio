@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */*
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn-primary{
+    font-weight: 900;
+    color:#ffffff;
+    background-color: #0989b8;
+    border-color:rgba(0, 128, 128, 0);
+}
+
+.btn-primary:hover{
+    color:#fff;
+    background-color:#004d4d;
+    border-color:#009a9a
+}
+
