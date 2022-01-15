@@ -1,7 +1,24 @@
 .div-container{
-    height: 100vh;
+    height: auto;
+   
 }
 
 .carousel-item {
-    height: 100vh;
+    height: auto;
+    padding: 50px;
+}
+
+.div-padding{
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 600px){
+    .carousel-item {
+        height: auto;
+        padding: 0px;
+    }
+    
+    .div-padding{
+        
+    }
 }
