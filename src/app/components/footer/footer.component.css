@@ -1,0 +1,18 @@
+.div-container{
+    background-color: #131618;
+    height: 300px;
+}
+
+.container-box{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    height: auto;
+    width: auto;
+    
+    
+}

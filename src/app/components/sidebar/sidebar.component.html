@@ -7,28 +7,30 @@
           <img src="//placehold.it/40?text=LOGO" alt="logo">
       </a>
       <div class="w-100 text-right">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+          <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#myNavbar">
               <span class="navbar-toggler-icon"></span>
           </button>
       </div>
   </div>
+  
   <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
         <div class="nav-container">
             <ul class="navbar-nav ms-auto flex-nowrap">
                 <li class="nav-item">
-                  <a href="#" class="nav-link m-2 menu-item nav-active text-dark">stefanobaiardi.com</a>
+                  <a href="#" class="nav-link m-2 menu-item nav-active text-white" routerLink="/home">stefanobaiardi.com</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item  text-dark" >Chi sono</a>
+                    <a href="#" class="nav-link m-2 menu-item  text-white" routerLink="/about">Chi sono</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item text-dark">Progetti</a>
+                    <a href="#" class="nav-link m-2 menu-item text-white" routerLink="/project">Progetti</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item text-dark">Contatti</a>
+                    <a href="#" class="nav-link m-2 menu-item text-white" routerLink="/contact">Contatti</a>
                 </li>
             </ul>
         </div>
       
   </div>
 </nav>
+<router-outlet></router-outlet>

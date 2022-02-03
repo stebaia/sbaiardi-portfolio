@@ -1,5 +1,5 @@
 .div-container{
-    
+   height: 100vh; 
 }
 
 .section-container{
@@ -7,6 +7,16 @@
     border-radius: 20px;
     padding: 10px;
     
+}
+
+h2, .h2 {
+    font-size: 40px;
+    color: #eb9fde;
+}
+
+
+h4, .h4 {
+    color: rgb(190, 77, 190);
 }
 
 .tag {
@@ -22,7 +32,7 @@
     margin-bottom: 14px;
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(136, 7, 136);
 }
 
 @media only screen and (max-width: 600px){
@@ -33,4 +43,8 @@
         padding: 10px;
         
     }
+
+    .div-container{
+        height: auto; 
+     }
 }

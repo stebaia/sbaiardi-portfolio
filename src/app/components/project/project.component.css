@@ -1,6 +1,6 @@
 .div-container{
-    height: auto;
-   
+    
+    height: 100vh;
 }
 
 .carousel-item {
@@ -8,17 +8,75 @@
     padding: 50px;
 }
 
-.div-padding{
-    border-radius: 25px;
+
+ul {
+    height: auto;
+    list-style-type: none;
+    list-style-position: inside;
+  }
+  ul li{
+    float: left;
+    width: 33%;
+}
+h2, .h2{
+    color: #eb9fde;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.card {
+    margin-top: 2em;
+    padding: 20px;
+    border-radius: 2em;
+    box-shadow: 0 0 25px #eb9fde;
+    animation: mymove 5s infinite;
+  }
+
+.image-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 0 0 30px #812872;
+    }
 }
 
 @media only screen and (max-width: 600px){
-    .carousel-item {
-        height: auto;
-        padding: 0px;
-    }
     
-    .div-padding{
-        
+    
+    
+    .div-container{
+        height: auto;
     }
+    h2, .h2{
+        
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    ul {
+        -webkit-padding-start: 0;
+        list-style-type: none;
+      }
+      ul li{
+        width: 100%;
+    }
+
+    .card {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 2em;
+        box-shadow: 0 0 25px #eb9fde;
+      }
 }

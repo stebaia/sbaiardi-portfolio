@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PROJECTS } from '../mock/mock-project';
 
 @Component({
   selector: 'app-project',
@@ -11,5 +12,8 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  projects = PROJECTS
+  
 
 }

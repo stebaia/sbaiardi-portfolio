@@ -1,18 +1,26 @@
 .div-container{
-    height: 100vh;
+    height: auto;
     background-color: #131618;
 }
 
 h2, .h2{
+    color: violet;
     font-weight: 700;
     font-size: 60px;
 }
 
 .center {
+    width: auto;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
-  }
+}
+
+@media only screen and (max-width: 600px){
+    h2, .h2{
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
