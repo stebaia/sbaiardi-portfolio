@@ -15,9 +15,6 @@
     width: auto;
 }
 
-.p, p {
-    background-color: #131618;
-}
 
 @media only screen and (max-width: 600px){
     
