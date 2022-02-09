@@ -28,7 +28,6 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     NgbModule,
     BrowserModule,
-    FontAwesomeModule,
     AppRoutingModule
   ],
   providers: [],
